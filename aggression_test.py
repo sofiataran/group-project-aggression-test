@@ -172,9 +172,8 @@ final = ("""
 """)
 
 # Request for a evaluation of the test
-
 while True:
-    mark = input(final)
+    mark = input(final).strip()  
     if mark.isdigit():  
         mark = int(mark)
         if 0 <= mark <= 10:
